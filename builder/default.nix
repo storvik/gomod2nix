@@ -50,7 +50,7 @@ let
     { hash
     , goPackagePath
     , version
-    , pkgs.git
+    , git ? pkgs.git
     , go ? pkgs.go
     }:
     stdenvNoCC.mkDerivation {
