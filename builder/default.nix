@@ -56,7 +56,7 @@ let
       name = "${baseNameOf goPackagePath}_${version}";
       builder = ./fetch.sh;
       inherit goPackagePath version;
-      nativeBuildInputs = [ go jq ];
+      nativeBuildInputs = [ go jq git ];
       outputHashMode = "recursive";
       outputHashAlgo = null;
       outputHash = hash;
